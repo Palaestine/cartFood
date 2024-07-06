@@ -1,0 +1,160 @@
+body{
+    background-color: white;
+    font-family: system-ui;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+}
+header .shopping{
+    position: relative;
+    cursor: pointer;
+}
+header .shopping i{
+    font-size: 35px;
+}
+header .shopping span{
+    background-color: #E8BC0E;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 60%;
+    padding: 3px 10px;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.list .item{
+    text-align: center;
+    background-color: #DCE0E1;
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+    width: 25%;
+    border-radius: 10px;
+}
+.list .item img{
+    width: 60%;
+    height: 160px;
+}
+.list .item .title{
+    font-weight: 700;
+}
+.list .item .price{
+    margin: 10px;
+    color: gray;
+}
+.list .item button{
+    background-color: #E8BC0E;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.list .item button:hover{
+    background-color: #e8bc0ea6;
+}
+
+
+
+.card{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 400px;
+    background-color: gray;
+    height: 100vh;
+    transform: translateX(1000px);
+    transition: 0.5s;
+}
+/*****************************/
+.active .card{
+    transform: translateX(0);
+}
+.active .container{
+    transform: translateX(-200px);
+}
+/*****************************/
+
+.card h1{
+    color: #E8BC0E;
+    font-weight: 800;
+    padding-left: 15px;   
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+.card .checkOut .total{
+    background-color: #E8BC0E;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card .checkOut .closeShopping{
+    background-color: #1C1F25;
+    color: #fff;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.listCard{
+    padding: 0;
+}
+
+.listCard li{
+    display: flex;
+    padding-right: 30px;
+    color: #fff;
+    background-color: #E8BC0E;
+    margin-bottom: 10px;
+    column-gap: 15px; 
+}
+
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 50%;
+}
+.listCard li .namee{
+    padding: 10px;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+    cursor: pointer;
+}
+.listCard .count{
+    margin: 0 5px;
+}
+
